@@ -11,6 +11,10 @@
         (100dvw - min(80dvw, 128ch)) / 4
       );
 
+    --page-padding-x2: calc(
+        (70dvw - min(90dvw, 128ch)) / 4
+      );
+
 }
 
 
@@ -45,25 +49,6 @@
 
 }
 
-/* #hamburger{
-    transform-origin: center;
-    
-}
- #Middle{
-    transition: all .5s ease;
-    -webkit-transition-duration: 0.2s; 
-    transform: translateX(5%);
-    opacity: 0;
-    display: none;
-}
- #Lower{
-    transition: all .5s ease;
-    -webkit-transition-duration: 0.2s; 
-    transition-duration: 0.2s;
-    transform: rotate(30deg);
-    transform-origin: center;
-  
-} */
 
 
 *{
@@ -274,6 +259,8 @@ p{
     
     
 }
+
+
 footer > p{
     font-size: clamp(0.75rem, 1dvw + 0.350rem, 1rem);
     line-height: 1rem;

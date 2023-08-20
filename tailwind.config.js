@@ -6,14 +6,16 @@ module.exports = {
       'sm': { 'max': '376px' },
       // Mobile	
 
-      'md': {  'min': '377px', 'max': '959px'},
+      'md': { 'min': '377px', 'max': '959px' },
       // Tablet & lower
 
       'lg': { 'min': '960px' },
       // Laptop 
-      'xl' : { 'min': '980px' },
+      'xl': { 'min': '980px' },
     },
-    extend: {},
+    extend: {
+
+    },
   },
   plugins: [],
 }
