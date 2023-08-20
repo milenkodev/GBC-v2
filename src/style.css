@@ -195,8 +195,8 @@ section:first-of-type  img{
 /* HAIRCUTS */
 
 section:nth-of-type(2) gallery img{
-    width: clamp(200px, 60svw - 12.5rem, 350px);
-    max-height: clamp(180px, 60svw - 12.5rem, 280px);;
+    width: clamp(200px, 60svw - 12.5rem, 400px);
+    max-height: clamp(180px, 60svw - 12.5rem, 350px);;
   
     @apply  overflow-hidden  object-cover  ;
 }
