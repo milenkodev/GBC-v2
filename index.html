@@ -12,7 +12,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="overflow-x-hidden" x-data="{show: false}">
+<body class="overflow-x-hidden" x-data="{show: false}" :class="show ? 'overflow-y-hidden' : ''">
 
 
 
@@ -83,7 +83,7 @@
         x-transition:enter-start="translate-x-[-500px]" x-transition:enter-end="translate-x-0 "
         x-transition:leave="transition transition-all duration-500" x-transition:leave-start="translate-x-0  "
         x-transition:leave-end="translate-x-[-1500px] duration-500"
-        class="z-[99] w-full h-[100vh] bg-[--black-color] top-0 left-0 fixed overflow-hidden">
+        class="z-[99] w-full h-[100dvh] bg-[--black-color] top-0 left-0 fixed overflow-hidden">
 
         <nav-inner-dropdown class="flex  justify-between items-center pt-6 pb-6 px-4 ">
 
