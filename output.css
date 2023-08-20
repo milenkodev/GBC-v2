@@ -572,6 +572,10 @@ video {
   top: 0px;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1527,6 +1531,10 @@ h1 > span, h2 > span, h3 > span {
 }
 
 @media (max-width: 376px) {
+  .sm\:top-2 {
+    top: 0.5rem;
+  }
+
   .sm\:order-1 {
     order: 1;
   }
@@ -1595,6 +1603,10 @@ h1 > span, h2 > span, h3 > span {
 }
 
 @media (min-width: 377px) and (max-width: 959px) {
+  .md\:top-2 {
+    top: 0.5rem;
+  }
+
   .md\:order-1 {
     order: 1;
   }
