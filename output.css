@@ -1163,15 +1163,9 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* Use custom styling here */
-
 :root {
-  --page-padding-x: calc(
-        (100dvw - min(80dvw, 128ch)) / 4
-      );
-  --page-padding-x2: calc(
-        (70dvw - min(90dvw, 128ch)) / 4
-      );
+  --page-padding-x: calc( (100dvw - min(80dvw, 128ch)) / 4 );
+  --page-padding-x2: calc( (70dvw - min(90dvw, 128ch)) / 4 );
 }
 
 #hamburger[type=checkbox]:checked + label, #hamburger-dropdown[type=checkbox]:checked + label{
@@ -1200,14 +1194,6 @@ video {
   scroll-behavior: smooth;
 }
 
-body{
-  /* padding-right: var(--page-padding-x);
-    padding-left: var(--page-padding-x); */
-  /* @apply px-[64px]; */
-}
-
-/* Button */
-
 inner-nav > ul > li{
   &.dark{
     color:white;
@@ -1218,8 +1204,6 @@ nav > a:last-child {
   font-size: clamp(0.75rem, 1dvw, 1.25rem);
 }
 
-/* Links */
-
 li {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1229,15 +1213,9 @@ li {
   font-size: clamp(0.875rem, 1dvw - 0.075rem, 1.25rem);
 }
 
-/* Logo */
-
 #logo{
   width: clamp(72px, 9.6vw, 96px);
 }
-
-/* ---- */
-
-/* *Hero */
 
 .action-btn-hero {
   display: flex;
@@ -1254,8 +1232,6 @@ li {
   font-family: 'Roboto Slab', serif;
   font-size: clamp(1rem, 1dvw + 0.313rem , 1.5rem);
 }
-
-/* card reviewws */
 
 reviewer-img {
   max-height: 42px;
@@ -1276,13 +1252,12 @@ stars-code > p{
 }
 
 container > container-right{
-  /* background-color: green; */
   width: clamp(300px, 40dvw, 35%);
   height: auto;
 }
 
 .glide__slide{
-  filter: grayscale(  );
+  filter: grayscale( );
   opacity: 0.6;
 }
 
@@ -1314,7 +1289,7 @@ h1, h2, h3, span {
 
 h1{
   font-size: clamp(1rem, 1dvw + 2.4rem, 4rem);
-  line-height: clamp(1rem, 3dvw + 2rem,  4rem);
+  line-height: clamp(1rem, 3dvw + 2rem, 4rem);
 }
 
 @media (min-width: 377px) and (max-width: 959px) {
@@ -1329,23 +1304,13 @@ h2{
   color: var(--black-color);
 }
 
-/* ABOUT */
-
-section:first-of-type{
-  /* background-color: green;
-    box-shadow: 25dvw 0px 0px 0px var(--black-color),
-     -25dvw 0px 0px 0px var(--black-color); */
-}
-
 section:first-of-type > *{
   color: white;
 }
 
-section:first-of-type  img{
+section:first-of-type img{
   height: clamp(180px, 50dvw - 12.5rem, 500px);
 }
-
-/* HAIRCUTS */
 
 section:nth-of-type(2) gallery img{
   width: clamp(200px, 60svw - 12.5rem, 400px);
@@ -1355,15 +1320,11 @@ section:nth-of-type(2) gallery img{
      object-fit: cover;
 }
 
-/* PRICING & SERVICES */
-
 section:nth-of-type(3) h2, section:nth-of-type(4) h2 {
   font-size: clamp(1.75rem, 1dvw + 2rem, 6rem);
   line-height: clamp(1.75rem, 3dvw + 1.75rem, 4rem);
   color: var(--black-color);
 }
-
-/* Academy */
 
 section:nth-of-type(5) h2{
   font-size: clamp(1.75rem, 1dvw + 2rem, 6rem);
@@ -1373,8 +1334,6 @@ section:nth-of-type(5) h2{
 iframe {
   width: 100%;
 }
-
-/* CONTACT */
 
 h3{
   font-size: clamp(2rem, 4rem, 6rem);
@@ -1767,11 +1726,3 @@ h1 > span, h2 > span, h3 > span {
     padding-right: 3rem;
   }
 }
-
-
-
-
-
-
-
-

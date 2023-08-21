@@ -1,274 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="icon" href="src/images/fav-beard.svg">
-    <meta charset="UTF-8" name="description"
-        content="Welcome to the Gentlemen's Barber Club based in Rotterdam, where style meets sophistication. Discover the art of grooming and experience the epitome of men's haircuts in Rotterdam. Our skilled barbers curate the finest haircuts, blending classic techniques with modern trends. Immerse yourself in a world of refined masculinity and indulge in the ultimate grooming experience. Join us at our Rotterdam barber club and redefine your style with the expert touch that discerning gentlemen deserve.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css?">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="src/glide.core.min.css">
-    <title>Gentlemen's Barber Club</title>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
-
-<body class="overflow-x-hidden" x-data="{show: false}" :class="show ? 'overflow-y-hidden' : ''">
-
-
-
-
-    <nav class="    w-full   fixed z-[90] px-[--page-padding-x2] top-4 md:top-2 sm:top-2 "
-        x-transition:enter="transition ease-in duration-100" x-transition:enter-start="translate-x-[-500px] scale-60"
-        x-transition:enter-end="translate-x-0 scale-100" x-transition:leave="transition ease-out duration-500"
-        x-transition:leave-start="translate-x-0  " x-transition:leave-end="translate-x-[-500px] ">
-
-        <inner-nav class=" flex justify-between  items-center sm:py-3 py-1 lg:px-12 px-4 z-50  ">
+   <head>
+      <link rel="icon" href="src/images/fav-beard.svg">
+      <meta charset="UTF-8" name="description"
+         content="Welcome to the Gentlemen's Barber Club based in Rotterdam, where style meets sophistication. Discover the art of grooming and experience the epitome of men's haircuts in Rotterdam. Our skilled barbers curate the finest haircuts, blending classic techniques with modern trends. Immerse yourself in a world of refined masculinity and indulge in the ultimate grooming experience. Join us at our Rotterdam barber club and redefine your style with the expert touch that discerning gentlemen deserve.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="output.css?">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="src/glide.core.min.css">
+      <title>Gentlemen's Barber Club</title>
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   </head>
+   <body class="overflow-x-hidden" x-data="{show: false}" :class="show ? 'overflow-y-hidden' : ''">
+      <nav class="    w-full   fixed z-[90] px-[--page-padding-x2] top-4 md:top-2 sm:top-2 "
+         x-transition:enter="transition ease-in duration-100" x-transition:enter-start="translate-x-[-500px] scale-60"
+         x-transition:enter-end="translate-x-0 scale-100" x-transition:leave="transition ease-out duration-500"
+         x-transition:leave-start="translate-x-0  " x-transition:leave-end="translate-x-[-500px] ">
+         <inner-nav class=" flex justify-between  items-center sm:py-3 py-1 lg:px-12 px-4 z-50  ">
             <a href="#hero" aria-label="Hero section"><img id="logo" src="src/images/logo.svg"
-                    alt="Gentlemens barber club logo" loading="lazy"></a>
+               alt="Gentlemens barber club logo" loading="lazy"></a>
             <ul class="sm:hidden md:hidden flex  md:gap-3 gap-8 w-auto">
-                <li
-                    class="  duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
-                    <a href="#the-story">The story</a>
-                </li>
-                <li
-                    class="duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color] ">
-                    <a href="#haircuts">Haircuts</a>
-                </li>
-                <li
-                    class="duration-300 ease-in-out transition    hover:-translate-y-1 hover:border-b-2 hover:border-[--primary-color]  ">
-                    <a href="#service-and-pricing">Service and Pricing</a>
-                </li>
-                <li
-                    class="duration-300 ease-in-out transition  hover:-translate-y-1 hover:border-b-2 hover:border-[--primary-color]  ">
-                    <a href="#academy">Academy</a>
-                </li>
-                <li
-                    class="duration-300 ease-in-out transition     hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
-                    <a href="#contact">Contact</a>
-                </li>
-
+               <li
+                  class="  duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
+                  <a href="#the-story">The story</a>
+               </li>
+               <li
+                  class="duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color] ">
+                  <a href="#haircuts">Haircuts</a>
+               </li>
+               <li
+                  class="duration-300 ease-in-out transition    hover:-translate-y-1 hover:border-b-2 hover:border-[--primary-color]  ">
+                  <a href="#service-and-pricing">Service and Pricing</a>
+               </li>
+               <li
+                  class="duration-300 ease-in-out transition  hover:-translate-y-1 hover:border-b-2 hover:border-[--primary-color]  ">
+                  <a href="#academy">Academy</a>
+               </li>
+               <li
+                  class="duration-300 ease-in-out transition     hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
+                  <a href="#contact">Contact</a>
+               </li>
             </ul>
-
             <a class="action-btn md:hidden sm:hidden inline-block  transition hover:scale-110 hover:shadow-md focus:outline-none focus:ring "
-                href="/download">
-                Book now <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="arrow pointing right"></a>
+               href="/download">
+            Book now <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="arrow pointing right"></a>
             </a>
-
-
             <input type="checkbox" class="hidden" id="hamburger" x-model="show" aria-describedby="hamburger-menu">
             <label for="hamburger" class=" w-12 h-12 bg-[--primary-color] grid shadow-md lg:hidden" id="hamburger-menu">
-                <div class="flex flex-col w-auto m-auto ">
-
-                    <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500" id="top-bar"> <img
-                            loading="lazy" src="src/images/hamburger-icon/top-line.svg"
-                            alt="upper line of hamburger menu"></span>
-                    <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
-                            src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
-                    <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
-                            src="src/images/hamburger-icon/bottom-line.svg" alt="bottom line of hamburger menu"></span>
-                </div>
+               <div class="flex flex-col w-auto m-auto ">
+                  <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500" id="top-bar"> <img
+                     loading="lazy" src="src/images/hamburger-icon/top-line.svg"
+                     alt="upper line of hamburger menu"></span>
+                  <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
+                     src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
+                  <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
+                     src="src/images/hamburger-icon/bottom-line.svg" alt="bottom line of hamburger menu"></span>
+               </div>
             </label>
-
-
-
-
-
-
-
-        </inner-nav>
-
-
-
-    </nav>
-    <!-- dropdown -->
-    <div id="dropdown-menu"
-        class="z-[99] w-full h-[100dvh] bg-[--black-color] top-0 left-0 fixed overflow-hidden lg:hidden "
-        :class="show ? 'translate-x-0 duration-200  transition-all' : ' opacity-100 opacity-1 translate-x-[-1500px] duration-200 transition-all'">
-
-        <nav-inner-dropdown class="flex  justify-between items-center pt-6 pb-6 px-4 ">
-
+         </inner-nav>
+      </nav>
+      <!-- dropdown -->
+      <div id="dropdown-menu"
+         class="z-[99] w-full h-[100dvh] bg-[--black-color] top-0 left-0 fixed overflow-hidden lg:hidden "
+         :class="show ? 'translate-x-0 duration-200  transition-all' : ' opacity-100 opacity-1 translate-x-[-1500px] duration-200 transition-all'">
+         <nav-inner-dropdown class="flex  justify-between items-center pt-6 pb-6 px-4 ">
             <a href="#hero" aria-label="Hero section" class=" transition hover:scale-110 hover:shadow-xl"><img id="logo"
-                    loading="lazy" src="src/images/logo-white.svg" alt=" Gentlemens barber club logo"></a>
+               loading="lazy" src="src/images/logo-white.svg" alt=" Gentlemens barber club logo"></a>
             <input type="checkbox" class="hidden  " id="hamburger-dropdown" x-model="show"
-                aria-describedby="hamburger-menu-dropdown">
+               aria-describedby="hamburger-menu-dropdown">
             <label for="hamburger-dropdown" class=" w-12 h-12 bg-[--black-color] grid lg:hidden" id="hamburger-dropdown">
-                <div class="flex flex-col w-auto m-auto transition hover:scale-110 hover:shadow-xl ">
-
-                    <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500 " id="top-bar"> <img
-                            loading="lazy" src="src/images/hamburger-icon/top-line.svg"
-                            alt="upper line of hamburger menu"></span>
-                    <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
-                            src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
-                    <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
-                            src="src/images/hamburger-icon/bottom-line.svg" alt="bottom line of hamburger menu"></span>
-                </div>
+               <div class="flex flex-col w-auto m-auto transition hover:scale-110 hover:shadow-xl ">
+                  <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500 " id="top-bar"> <img
+                     loading="lazy" src="src/images/hamburger-icon/top-line.svg"
+                     alt="upper line of hamburger menu"></span>
+                  <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
+                     src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
+                  <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
+                     src="src/images/hamburger-icon/bottom-line.svg" alt="bottom line of hamburger menu"></span>
+               </div>
             </label>
-        </nav-inner-dropdown>
-
-
-        <ul class="py-2  text-white flex  flex-col  gap-2 font-bold px-4 ">
+         </nav-inner-dropdown>
+         <ul class="py-2  text-white flex  flex-col  gap-2 font-bold px-4 ">
             <li class="flex justify-between items-center border-b-2 border-[#2f2f2f]">
-                <a href="#the-story" x-on:click="show = !show" class="block px-4 py-2 text-lg">The story</a> <img
-                    src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
-            </li>
-
-            <li class="flex justify-between items-center border-b-2 border-[#2f2f2f]">
-                <a href="#haircuts" x-on:click="show = !show" class="block px-4 py-2 text-lg">Haircuts</a> <img
-                    src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
+               <a href="#the-story" x-on:click="show = !show" class="block px-4 py-2 text-lg">The story</a> <img
+                  src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
             </li>
             <li class="flex justify-between items-center border-b-2 border-[#2f2f2f]">
-                <a href="#service-and-pricing" x-on:click="show = !show" class="block px-4 py-2 text-lg">Service and
-                    Pricing</a> <img src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
+               <a href="#haircuts" x-on:click="show = !show" class="block px-4 py-2 text-lg">Haircuts</a> <img
+                  src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
+            </li>
+            <li class="flex justify-between items-center border-b-2 border-[#2f2f2f]">
+               <a href="#service-and-pricing" x-on:click="show = !show" class="block px-4 py-2 text-lg">Service and
+               Pricing</a> <img src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
             </li>
             <li class="flex justify-between items-center  border-b-2 border-[#2f2f2f]">
-                <a href="#academy" x-on:click="show = !show" class="block px-4 py-2 text-lg">Academy</a> <img
-                    src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
+               <a href="#academy" x-on:click="show = !show" class="block px-4 py-2 text-lg">Academy</a> <img
+                  src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
             </li>
             <li class="flex justify-between items-center border-b-2 border-[#2f2f2f]">
-                <a href="#contact" x-on:click="show = !show" class="block px-4 py-2 text-lg">Contact</a> <img
-                    src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
+               <a href="#contact" x-on:click="show = !show" class="block px-4 py-2 text-lg">Contact</a> <img
+                  src="src/images/arrow.svg" alt="Arrow pointing right" class="w-8 " loading="lazy">
             </li>
-
             <li></li>
             <li> <a class="action-btn justify-self-end px-4 transition hover:scale-110 hover:shadow-md focus:outline-none focus:ring "
-                    href="https://gentlemens-barberclub.salonized.com/widget_bookings/new"> Book an appointment</a></li>
-
-
-        </ul>
-
-    </div>
-
-
-
-
-
-
-
-
-    <hero class="md:grid md:grid-rows-1 md:grid-flow-row-dense  flex flex-col justify-stretch  h-[100dvh] ">
-        <container class="flex justify-between md:mt-32  pt-12 md:pt-0 flex-1 " id="hero">
-
-
-
+               href="https://gentlemens-barberclub.salonized.com/widget_bookings/new"> Book an appointment</a></li>
+         </ul>
+      </div>
+      <hero class="md:grid md:grid-rows-1 md:grid-flow-row-dense  flex flex-col justify-stretch  h-[100dvh] ">
+         <container class="flex justify-between md:mt-32  pt-12 md:pt-0 flex-1 " id="hero">
             <container-left
-                class=" first:flex  flex-col  justify-center pl-[--page-padding-x] md:px-[--page-padding-x] place-items-start md:place-items-center  md:flex-grow bl">
-
-                <h4 class="mb-2">An Experience To Discover</h4>
-                <h1 class="mb-8 sm:mb-3 max-w-[22ch] md:max-w-full ">We provide the <span>finest haircuts</span> in
-                    Rotterdam.</h1>
-                <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
-                    class="action-btn-hero mb-16 sm:mb-3  transition hover:scale-110 hover:shadow-xl  ">Book an
-                    appointment <img src="src/images/arrow.svg" class="btn-icon" loading="lazy"
-                        alt="Arrow pointing right"></a>
-
-
-                <review-score
-                    class="sm:p-2 md:p-2 p-4 sm:mt-8 md:mt-8 bg-[#F7F7F7] flex gap-3 items-center rounded-lg shadow-sm shadow-slate-300">
-                    <a href="https://www.google.com/search?q=gentlemensbarberclub&oq=gentlemensbarberclub+&aqs=chrome..69i57j69i59j69i60.5647j0j7&sourceid=chrome&ie=UTF-8#"
-                        aria-label="Google reviews" target="_blank"> <inner-wrapper-left class="flex  ">
-                            <reviewer-img class=" z-[49]"><img src="src/images/reviews/1.webp"
-                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-40 -ml-4"><img src="src/images/reviews/2.webp"
-                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-30 -ml-4"><img src="src/images/reviews/3.webp"
-                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-20 -ml-4"><img src="src/images/reviews/4.webp"
-                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-10 -ml-4"><img src="src/images/reviews/5.webp"
-                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
-                        </inner-wrapper-left> </a>
-
-
-                    <inner-wrapper-right class="flex flex-col ">
-                        <stars-score class=" text-2xl md:text-base text-left grid grid-cols-5 gap-0">
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </stars-score>
-                        <p class="text-base   w-full sm:text-[.88rem] md:text-[.88rem] text-[1rem]">from 100+ reviews
-                        </p>
-                    </inner-wrapper-right>
-                </review-score>
-
+               class=" first:flex  flex-col  justify-center pl-[--page-padding-x] md:px-[--page-padding-x] place-items-start md:place-items-center  md:flex-grow bl">
+               <h4 class="mb-2">An Experience To Discover</h4>
+               <h1 class="mb-8 sm:mb-3 max-w-[22ch] md:max-w-full ">We provide the <span>finest haircuts</span> in
+                  Rotterdam.
+               </h1>
+               <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
+                  class="action-btn-hero mb-16 sm:mb-3  transition hover:scale-110 hover:shadow-xl  ">Book an
+               appointment <img src="src/images/arrow.svg" class="btn-icon" loading="lazy"
+                  alt="Arrow pointing right"></a>
+               <review-score
+                  class="sm:p-2 md:p-2 p-4 sm:mt-8 md:mt-8 bg-[#F7F7F7] flex gap-3 items-center rounded-lg shadow-sm shadow-slate-300">
+                  <a href="https://www.google.com/search?q=gentlemensbarberclub&oq=gentlemensbarberclub+&aqs=chrome..69i57j69i59j69i60.5647j0j7&sourceid=chrome&ie=UTF-8#"
+                     aria-label="Google reviews" target="_blank">
+                     <inner-wrapper-left class="flex  ">
+                        <reviewer-img class=" z-[49]"><img src="src/images/reviews/1.webp"
+                           alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                        <reviewer-img class="  z-40 -ml-4"><img src="src/images/reviews/2.webp"
+                           alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                        <reviewer-img class="  z-30 -ml-4"><img src="src/images/reviews/3.webp"
+                           alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                        <reviewer-img class="  z-20 -ml-4"><img src="src/images/reviews/4.webp"
+                           alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                        <reviewer-img class="  z-10 -ml-4"><img src="src/images/reviews/5.webp"
+                           alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                     </inner-wrapper-left>
+                  </a>
+                  <inner-wrapper-right class="flex flex-col ">
+                     <stars-score class=" text-2xl md:text-base text-left grid grid-cols-5 gap-0">
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                     </stars-score>
+                     <p class="text-base   w-full sm:text-[.88rem] md:text-[.88rem] text-[1rem]">from 100+ reviews
+                     </p>
+                  </inner-wrapper-right>
+               </review-score>
             </container-left>
             <container-right class="sm:hidden md:hidden flex  ">
-                <div class="glide  self-center ">
-                    <div class="glide__track    " data-glide-el="track">
-                        <ul class="glide__slides    ">
-                            <li class="glide__slide  "><img class="" src="src/images/img1.webp"
-                                    alt="Haircut of a customer" loading="lazy">
-                            </li>
-                            <li class="glide__slide "><img class=" " src="src/images/img2.webp"
-                                    alt="Haircut of a customer" loading="lazy">
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
+               <div class="glide  self-center ">
+                  <div class="glide__track    " data-glide-el="track">
+                     <ul class="glide__slides    ">
+                        <li class="glide__slide  "><img class="" src="src/images/img1.webp"
+                           alt="Haircut of a customer" loading="lazy">
+                        </li>
+                        <li class="glide__slide "><img class=" " src="src/images/img2.webp"
+                           alt="Haircut of a customer" loading="lazy">
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </container-right>
-
-        </container>
-
-        <arrow-down class="flex justify-center  ">
+         </container>
+         <arrow-down class="flex justify-center  ">
             <a href="#the-story" aria-label="Scroll down to the story">
-                <div class="bg-[#1f1f1f] grid"><img src="src/images/arrow-down.svg" alt="Arrow pointing down"
-                        loading="lazy" class=" md:p-4 sm:p-4 p-3  duration-300 w-16 animate-pulse"></div>
+               <div class="bg-[#1f1f1f] grid"><img src="src/images/arrow-down.svg" alt="Arrow pointing down"
+                  loading="lazy" class=" md:p-4 sm:p-4 p-3  duration-300 w-16 animate-pulse"></div>
             </a>
-        </arrow-down>
-    </hero>
-
-
-
-
-
-    <section
-        class="flex  flex-col bg-[--black-color]  lg:h-[100svh] py-24 md:py-24 justify-center gap-12 sm:gap-8 sm:py-12 "
-        id="the-story" data-header-nav="dark">
-
-        <h2 class="max-w-[24ch]  text-center  self-center"><span>The story</span> behind our
+         </arrow-down>
+      </hero>
+      <section
+         class="flex  flex-col bg-[--black-color]  lg:h-[100svh] py-24 md:py-24 justify-center gap-12 sm:gap-8 sm:py-12 "
+         id="the-story" data-header-nav="dark">
+         <h2 class="max-w-[24ch]  text-center  self-center"><span>The story</span> behind our
             barber shop
-        </h2>
-        <container
+         </h2>
+         <container
             class="  flex  md:flex-col items-center  flex-wrap  justify-center gap-12 md:gap-6 px-[--page-padding-x] translate-y-[1000px]"
             id="about-content">
             <inner-wrapper-left>
-                <p>Welcome to Gentlemen's Barber Club, the embodiment of class in the vibrant city of Rotterdam. We
-                    pride ourselves on understanding our customers' needs, ensuring an enjoyable experience at our shop.
-                    <br><br>
-                    Specializing in both modern and classic haircuts, we offer a curated selection of timeless styles
-                    that have stood the test of time. From flattops and pompadours to boogies, contours, and other
-                    iconic old-school signature cuts, we embrace the artistry of the past.
-                    <br><br>
-                    Join us as we invite you to take a seat in one of our chairs and indulge in the finest service.
-                    Together, let's shape the future of grooming excellence.
-                </p>
+               <p>Welcome to Gentlemen's Barber Club, the embodiment of class in the vibrant city of Rotterdam. We
+                  pride ourselves on understanding our customers' needs, ensuring an enjoyable experience at our shop.
+                  <br><br>
+                  Specializing in both modern and classic haircuts, we offer a curated selection of timeless styles
+                  that have stood the test of time. From flattops and pompadours to boogies, contours, and other
+                  iconic old-school signature cuts, we embrace the artistry of the past.
+                  <br><br>
+                  Join us as we invite you to take a seat in one of our chairs and indulge in the finest service.
+                  Together, let's shape the future of grooming excellence.
+               </p>
             </inner-wrapper-left>
             <inner-wrapper-right class=" ">
-
-                <img src="src/images/barber-self.webp" alt="Image of the owner of the barbershop" id="about-img"
-                    loading="lazy" class=" object-cover min-h-[280px] max-h-[500px]  ">
+               <img src="src/images/barber-self.webp" alt="Image of the owner of the barbershop" id="about-img"
+                  loading="lazy" class=" object-cover min-h-[280px] max-h-[500px]  ">
             </inner-wrapper-right>
-        </container>
-    </section>
-
-
-
-
-
-
-    <section class="flex flex-col px-[--page-padding-x]   justify-center gap-9 sm:py-12 py-24 md:py-12  " id="haircuts">
-        <inner-wrapper class=" flex flex-wrap place-items-center justify-between ">
+         </container>
+      </section>
+      <section class="flex flex-col px-[--page-padding-x]   justify-center gap-9 sm:py-12 py-24 md:py-12  " id="haircuts">
+         <inner-wrapper class=" flex flex-wrap place-items-center justify-between ">
             <h2 class="sm:text-center md:text-center self-end  grow">Our finest <span>haircuts</span></h2>
             <a href="https://www.instagram.com/gentlemensbarber_club/" target="_blank"
-                class="transition hover:scale-110 hover:shadow-md sm:hidden md:hidden action-btn content-end  hover:shadow-slate-200 duration-300 hover:-translate-y-1">
-                <img src="src/images/instagram.svg" class="btn-icon " alt="Logo of Instagram" loading="lazy"> Check more
-                on instagram</a>
-        </inner-wrapper>
-        <gallery class="grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2 gap-3  place-items-stretch auto-cols-max">
-
+               class="transition hover:scale-110 hover:shadow-md sm:hidden md:hidden action-btn content-end  hover:shadow-slate-200 duration-300 hover:-translate-y-1">
+            <img src="src/images/instagram.svg" class="btn-icon " alt="Logo of Instagram" loading="lazy"> Check more
+            on instagram</a>
+         </inner-wrapper>
+         <gallery class="grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2 gap-3  place-items-stretch auto-cols-max">
             <img src="src/images/haircuts/1.webp" loading="lazy" alt=" Haircut of a customer">
             <img src="src/images/haircuts/2.webp" class="object-left-top" loading="lazy" alt=" Haircut of a customer">
             <img src="src/images/haircuts/3.webp" loading="lazy" alt=" Haircut of a customer">
@@ -279,367 +216,306 @@
             <img src="src/images/haircuts/8.webp" class="object-left-top" loading="lazy" alt=" Haircut of a customer">
             <img src="src/images/haircuts/9.webp" loading="lazy" alt=" Haircut of a customer">
             <img src="src/images/haircuts/10.webp" class=" md:hidden" loading="lazy" alt=" Haircut of a customer">
-
-
-
-        </gallery>
-        <a href="https://www.instagram.com/gentlemensbarber_club/" target="_blank"
+         </gallery>
+         <a href="https://www.instagram.com/gentlemensbarber_club/" target="_blank"
             class="lg:hidden action-btn content-end hover:shadow-lg hover:shadow-slate-200 duration-300 hover:-translate-y-1">
-            <img src="src/images/instagram.svg" class="btn-icon " loading="lazy" alt="Logo of Instagram"> View more on
-            instagram</a>
-    </section>
-
-
-    <section
-        class=" grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 md:gap-4 sm:gap-4 px-[--page-padding-x] mt-32  place-content-center "
-        id="service-and-pricing">
-        <inner-wrapper-right class=" sm:order-1 md:order-1 md:w-full ">
-
+         <img src="src/images/instagram.svg" class="btn-icon " loading="lazy" alt="Logo of Instagram"> View more on
+         instagram</a>
+      </section>
+      <section
+         class=" grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8 md:gap-4 sm:gap-4 px-[--page-padding-x] mt-32  place-content-center "
+         id="service-and-pricing">
+         <inner-wrapper-right class=" sm:order-1 md:order-1 md:w-full ">
             <iframe title="Gentlemen's Barber Club services and Pricing list" loading="lazy" class="min-h-[830px]"
-                src="https://gentlemens-barberclub.salonized.com/services?layout=embed" frameborder="0"
-                allowfullscreen></iframe>
-
-        </inner-wrapper-right>
-        <inner-wrapper-left class="md:order-0 flex  w-full flex-col justify-start gap-12  ">
-
+               src="https://gentlemens-barberclub.salonized.com/services?layout=embed" frameborder="0"
+               allowfullscreen></iframe>
+         </inner-wrapper-right>
+         <inner-wrapper-left class="md:order-0 flex  w-full flex-col justify-start gap-12  ">
             <h2 class="  text-right ">Our <span>services</span> for the best <span>prices</span></h2>
             <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
-                class="action-btn sm:hidden md:hidden overflow-y-hidden md:self-end lg:self-end transition hover:scale-110 hover:shadow-md ">Book
-                an appointment
-                <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
-        </inner-wrapper-left>
-        <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
+               class="action-btn sm:hidden md:hidden overflow-y-hidden md:self-end lg:self-end transition hover:scale-110 hover:shadow-md ">Book
+            an appointment
+            <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
+         </inner-wrapper-left>
+         <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
             class="action-btn lg:hidden order-3">Book an appointment <img src="src/images/arrow.svg" loading="lazy"
-                class="btn-icon" alt="Arrow pointing right"></a>
-    </section>
-
-
-
-
-
-
-
-    <section class="flex  flex-col  justify-center mt-32 px-[--page-padding-x]">
-        <inner-wrapper class="flex flex-col justify-between ">
-
+            class="btn-icon" alt="Arrow pointing right"></a>
+      </section>
+      <section class="flex  flex-col  justify-center mt-32 px-[--page-padding-x]">
+         <inner-wrapper class="flex flex-col justify-between ">
             <h2 class="max-w-[26ch] md:hidden sm:hidden"><span>Premium</span> products that we have for your needs</h2>
             <h2 class="max-w-[26ch] lg:hidden "><span>Premium</span> products for your needs</h2>
-
-        </inner-wrapper>
-        <gallery class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mt-12 gap-3 sm:gap-1 md:gap-1">
+         </inner-wrapper>
+         <gallery class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mt-12 gap-3 sm:gap-1 md:gap-1">
             <img src="src/images/products/product-1.webp" alt="Products for hair" loading="lazy">
             <img src="src/images/products/product-2.webp" alt="Products for hair" loading="lazy">
             <img src="src/images/products/product-3.webp" alt="Products for hair" loading="lazy">
             <img src="src/images/products/product-4.webp" alt="Products for hair" loading="lazy">
-
-        </gallery>
-
-
-    </section>
-
-
-
-
-
-
-
-    <section
-        class="flex  md:flex-wrap bg-[--black-color]  justify-center mt-32 sm:mt-8 md:mt-8 gap-6 items-center px-[--page-padding-x] py-32 "
-        id="academy" data-header-nav="dark">
-        <inner-wrapper-left class="flex-col justify-center lg:h-[100dvh]   flex self-center">
-
+         </gallery>
+      </section>
+      <section
+         class="flex  md:flex-wrap bg-[--black-color]  justify-center mt-32 sm:mt-8 md:mt-8 gap-6 items-center px-[--page-padding-x] py-32 "
+         id="academy" data-header-nav="dark">
+         <inner-wrapper-left class="flex-col justify-center lg:h-[100dvh]   flex self-center">
             <h2 class="max-w-[32ch] text-white mb-6 sm:hidden md:hidden">Elevate your barber skills at our academy</h2>
             <h2 class="max-w-[32ch] text-white mb-6 lg:hidden">Elevate your barber skills</h2>
             <p class="text-white mb-6">Looking for an internship or want to level up your barbering skills? Kickstart
-                your
-                journey as a barber with our expert guidance.
-                <br><br>
-                Contact us now for more info!
+               your
+               journey as a barber with our expert guidance.
+               <br><br>
+               Contact us now for more info!
             </p>
-
             <inner-wrapper-2 class="flex gap-16 flex-wrap ">
-                <a href="#contact" class="action-btn self-center transition hover:scale-110 hover:shadow-md">Contact us
-                    <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
-                <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png"
-                    alt="Logo of Samenwerkingsorganisatie Beroepsonderwijs Bedrijfsleven">
+               <a href="#contact" class="action-btn self-center transition hover:scale-110 hover:shadow-md">Contact us
+               <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
+               <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png"
+                  alt="Logo of Samenwerkingsorganisatie Beroepsonderwijs Bedrijfsleven">
             </inner-wrapper-2>
-
-        </inner-wrapper-left>
-        <inner-wrapper-right>
+         </inner-wrapper-left>
+         <inner-wrapper-right>
             <img class="logo md:hidden sm:hidden translate-x-[500px] opacity-0" src="src/images/logo-white.svg"
-                loading="lazy" alt="Logo of Gentlemens Barber Club" id="logo-academy">
-        </inner-wrapper-right>
-
-
-        </gallery>
-    </section>
-
-
-
-
-
-    <section class="  flex flex-col  justify-center  px-[--page-padding-x] lg:h-[100dvh] translate-y-[250px]"
-        id="contact">
-        <h2 class="  text-center  lg:w-[32ch] self-center sm:hidden md:hidden"><span>Contact us</span> and
-            get yourself a nice haircut</h2>
-        <h2 class="  text-center  lg:w-[32ch]  lg:hidden "><span>Contact us</span> for a nice haircut</h2>
-        <container class="flex justify-center gap-12 mt-16 sm:mt-8 md:mt-8 flex-wrap">
+               loading="lazy" alt="Logo of Gentlemens Barber Club" id="logo-academy">
+         </inner-wrapper-right>
+         </gallery>
+      </section>
+      <section class="  flex flex-col  justify-center  px-[--page-padding-x] lg:h-[100dvh] translate-y-[250px]"
+         id="contact">
+         <h2 class="  text-center  lg:w-[32ch] self-center sm:hidden md:hidden"><span>Contact us</span> and
+            get yourself a nice haircut
+         </h2>
+         <h2 class="  text-center  lg:w-[32ch]  lg:hidden "><span>Contact us</span> for a nice haircut</h2>
+         <container class="flex justify-center gap-12 mt-16 sm:mt-8 md:mt-8 flex-wrap">
             <inner-wrapper-left class=" grid grid-cols-2 gap-6 sm:w-full md:w-full ">
-
-                <p>Monday</p>
-                <p class="justify-self-end">Closed</p>
-
-
-                <p>Tuesday</p>
-                <p class="justify-self-end">Closed</p>
-
-
-                <p>Wednesday</p>
-                <p class="font-bold justify-self-end">09:00 - 17:30</p>
-
-
-                <p>Thursday</p>
-                <p class="font-bold justify-self-end">09:00 - 17:30</p>
-
-
-                <p>Friday</p>
-                <p class="font-bold justify-self-end">09:00 - 19:00</p>
-
-                <p>Saturday</p>
-                <p class="font-bold justify-self-end">09:00 - 18:00</p>
-
-
-                <p>Sunday</p>
-                <p class="justify-self-end">Closed</p>
-
+               <p>Monday</p>
+               <p class="justify-self-end">Closed</p>
+               <p>Tuesday</p>
+               <p class="justify-self-end">Closed</p>
+               <p>Wednesday</p>
+               <p class="font-bold justify-self-end">09:00 - 17:30</p>
+               <p>Thursday</p>
+               <p class="font-bold justify-self-end">09:00 - 17:30</p>
+               <p>Friday</p>
+               <p class="font-bold justify-self-end">09:00 - 19:00</p>
+               <p>Saturday</p>
+               <p class="font-bold justify-self-end">09:00 - 18:00</p>
+               <p>Sunday</p>
+               <p class="justify-self-end">Closed</p>
             </inner-wrapper-left>
             <inner-wrapper-right class=" flex flex-col gap-4  place-items-start  ">
-                <address class="not-italic flex flex-col gap-1">
-                    <p class="font-bold mb-2 text-4xl">Gentlemen's Barber Club</p>
-                    <p>Eckarstraat 47, 3077 XD Rotterdam <br>
-                        <a href="tel: +31681142720p123">+31681142720</a>
-                    </p>
-                </address>
-                <a href="https://goo.gl/maps/vQsitdjr4QXVJSZG8" target="_blank"
-                    class="transition hover:scale-110 hover:shadow-md  action-btn-whatsapp   py-3 px-6 text-white bg-[#3663b0] flex gap-4   font-extrabold rounded-lg  ">
-                    <img loading="lazy" src="src/images/google-direction.svg" class="btn-icon"
-                        alt="Icon of Google maps">Google maps</a>
-                <a href="https://wa.me/+31638477744" target="_blank"
-                    class="transition hover:scale-110 hover:shadow-md action-btn-whatsapp   py-3 px-6 text-white bg-[#247441] flex gap-4   font-extrabold rounded-lg  ">
-                    <img loading="lazy" src="src/images/whatsapp.svg" class="btn-icon" alt="Logo of WhatsApp"> Chat on
-                    WhatsApp</a>
-
-                <div class="flex flex-col gap-4 mt-24 sm:mt-8 md:mt-8">
-                    <p>Follow our social media:</p>
-                    <button-group class="flex gap-4"> <a href="https://www.instagram.com/gentlemensbarber_club/"
-                            target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
-                            <img loading="lazy" src="src/images/instagram.svg" class="btn-icon" alt="Logo of Instagram">
-                            Instagram </a>
-                        <a href="https://www.facebook.com/people/Gentlemens-Barber-Club/100064843727852/"
-                            target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
-                            <img src="src/images/facebook.svg" loading="lazy" class="btn-icon" alt="Logo of Facebook">
-                            Facebook
-                        </a></button-group>
-
-                </div>
+               <address class="not-italic flex flex-col gap-1">
+                  <p class="font-bold mb-2 text-4xl">Gentlemen's Barber Club</p>
+                  <p>Eckarstraat 47, 3077 XD Rotterdam <br>
+                     <a href="tel: +31681142720p123">+31681142720</a>
+                  </p>
+               </address>
+               <a href="https://goo.gl/maps/vQsitdjr4QXVJSZG8" target="_blank"
+                  class="transition hover:scale-110 hover:shadow-md  action-btn-whatsapp   py-3 px-6 text-white bg-[#3663b0] flex gap-4   font-extrabold rounded-lg  ">
+               <img loading="lazy" src="src/images/google-direction.svg" class="btn-icon"
+                  alt="Icon of Google maps">Google maps</a>
+               <a href="https://wa.me/+31638477744" target="_blank"
+                  class="transition hover:scale-110 hover:shadow-md action-btn-whatsapp   py-3 px-6 text-white bg-[#247441] flex gap-4   font-extrabold rounded-lg  ">
+               <img loading="lazy" src="src/images/whatsapp.svg" class="btn-icon" alt="Logo of WhatsApp"> Chat on
+               WhatsApp</a>
+               <div class="flex flex-col gap-4 mt-24 sm:mt-8 md:mt-8">
+                  <p>Follow our social media:</p>
+                  <button-group class="flex gap-4"> <a href="https://www.instagram.com/gentlemensbarber_club/"
+                     target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
+                     <img loading="lazy" src="src/images/instagram.svg" class="btn-icon" alt="Logo of Instagram">
+                     Instagram </a>
+                     <a href="https://www.facebook.com/people/Gentlemens-Barber-Club/100064843727852/"
+                        target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
+                     <img src="src/images/facebook.svg" loading="lazy" class="btn-icon" alt="Logo of Facebook">
+                     Facebook
+                     </a>
+                  </button-group>
+               </div>
             </inner-wrapper-right>
-
-        </container>
-
-    </section>
-    <footer class="bg-[--black-color] mt-24 flex text-white py-2 justify-between px-[--page-padding-x]">
-        <p>© 2023 Gentlemen’s Barber Club. All rights reserved</p>
-        <p>Powered by <a href="https://bigbaboons.studio" target="_blank" class="">Big Baboons Studio </a> 🐵</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-    <script>
-
-
-
-
-
-        function checkFocus() {
-
-            const titleSelector = document.querySelector('title');
-            var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-
-
-            if (document.visibilityState === 'visible') {
-                titleSelector.innerHTML = 'Gentlemen\’s Barber Club';
-                link.href = 'src/images/fav-hat.svg';
-                document.getElementsByTagName('head')[0].appendChild(link);
-
-            } else {
-                titleSelector.innerHTML = ' 🔙  Get Your Finest Haircut Today';
-                link.href = 'src/images/fav-beard.svg';
-                document.getElementsByTagName('head')[0].appendChild(link);
-            }
-        };
-
-        document.addEventListener('visibilitychange', checkFocus);
-
-
-
-
-        const config = {
-            type: 'carousel',
-            autoplay: 4000,
-            animationDuration: 1500,
-            gap: '18px',
-            perView: 1.15,
-        }
-        new Glide('.glide', config).mount({
-
-        });
-
-
-
-
-
-        gsap.to(".hero-img", {
-            x: 0,
-            duration: 1.2
-        });
-
-
-
-
-
-
-        gsap.to("container-left", {
-            scrollTrigger: {
-                trigger: "arrow-down",
-                toggleActions: "restart reverse none none",
-
-                start: 'center center+=250',
-                scrub: true,
-            },
-            x: -500,
-            opacity: 0,
-            duration: 1
-
-        });
-        gsap.to("container-right", {
-            scrollTrigger: {
-                trigger: "arrow-down",
-                toggleActions: "restart reverse none none",
-
-                start: 'center center+=200',
-                scrub: true,
-            },
-            x: 500,
-            opacity: 0,
-            duration: 1
-
-        });
-
-
-        gsap.to("#about-content", {
-            scrollTrigger: {
-                trigger: "arrow-down",
-                scrub: true,
-
-                start: 'top center',
-                end: 'bottom+=500 center'
-
-            },
-            y: 0,
-            opacity: 100,
-            duration: 0.5
-
-        });
-
-        gsap.to("#logo-academy", {
-            scrollTrigger: {
-                trigger: "#academy",
-                scrub: true,
-                // markers:true,
-                start: 'top center',
-                end: 'center center'
-
-            },
-
-            x: 0,
-            opacity: 100,
-            duration: 3.5
-
-        });
-
-
-        gsap.to("#contact", {
-            scrollTrigger: {
-                trigger: "#academy",
-                scrub: true,
-                // markers:true,
-                start: 'bottom center',
-                end: 'bottom+=550 center'
-
-            },
-            y: 0,
-            opacity: 100,
-            duration: 0.5
-
-        });
-
-
-
-        const showAnim = gsap.from('nav', {
-            yPercent: -205,
-
-            paused: true,
-            duration: 0.4
-        }).progress(1);
-
-        ScrollTrigger.create({
-            start: "top top",
-            end: 99999,
-            onUpdate: (self) => {
-                self.direction === -1 ? showAnim.play() : showAnim.reverse()
-            }
-        });
-
-
-
-
-        gsap.utils.toArray('section').forEach((section, i) => {
-
-
-            if (section.getAttribute('data-header-nav') !== null) {
-
-                var colorClass = section.getAttribute('data-header-nav')
-
-                ScrollTrigger.create({
-                    trigger: section,
-                    // markers:true,
-                    start: 'top +=75',
-                    end: 'bottom ',
-                    toggleClass: {
-                        targets: 'li',
-                        className: colorClass
-                    },
-
-                })
-
-            }
-
-        });
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
-</body>
-
+         </container>
+      </section>
+      <footer class="bg-[--black-color] mt-24 flex text-white py-2 justify-between px-[--page-padding-x]">
+         <p>© 2023 Gentlemen’s Barber Club. All rights reserved</p>
+         <p>Powered by <a href="https://bigbaboons.studio" target="_blank" class="">Big Baboons Studio </a> 🐵</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <script>
+         function checkFocus() {
+         
+             const titleSelector = document.querySelector('title');
+             var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+         
+         
+             if (document.visibilityState === 'visible') {
+                 titleSelector.innerHTML = 'Gentlemen\’s Barber Club';
+                 link.href = 'src/images/fav-hat.svg';
+                 document.getElementsByTagName('head')[0].appendChild(link);
+         
+             } else {
+                 titleSelector.innerHTML = ' 🔙  Get Your Finest Haircut Today';
+                 link.href = 'src/images/fav-beard.svg';
+                 document.getElementsByTagName('head')[0].appendChild(link);
+             }
+         };
+         
+         document.addEventListener('visibilitychange', checkFocus);
+         
+         
+         
+         
+         const config = {
+             type: 'carousel',
+             autoplay: 4000,
+             animationDuration: 1500,
+             gap: '18px',
+             perView: 1.15,
+         }
+         new Glide('.glide', config).mount({
+         
+         });
+         
+         
+         
+         
+         
+         gsap.to(".hero-img", {
+             x: 0,
+             duration: 1.2
+         });
+         
+         
+         
+         
+         
+         
+         gsap.to("container-left", {
+             scrollTrigger: {
+                 trigger: "arrow-down",
+                 toggleActions: "restart reverse none none",
+         
+                 start: 'center center+=250',
+                 scrub: true,
+             },
+             x: -500,
+             opacity: 0,
+             duration: 1
+         
+         });
+         gsap.to("container-right", {
+             scrollTrigger: {
+                 trigger: "arrow-down",
+                 toggleActions: "restart reverse none none",
+         
+                 start: 'center center+=200',
+                 scrub: true,
+             },
+             x: 500,
+             opacity: 0,
+             duration: 1
+         
+         });
+         
+         
+         gsap.to("#about-content", {
+             scrollTrigger: {
+                 trigger: "arrow-down",
+                 scrub: true,
+         
+                 start: 'top center',
+                 end: 'bottom+=500 center'
+         
+             },
+             y: 0,
+             opacity: 100,
+             duration: 0.5
+         
+         });
+         
+         gsap.to("#logo-academy", {
+             scrollTrigger: {
+                 trigger: "#academy",
+                 scrub: true,
+                 // markers:true,
+                 start: 'top center',
+                 end: 'center center'
+         
+             },
+         
+             x: 0,
+             opacity: 100,
+             duration: 3.5
+         
+         });
+         
+         
+         gsap.to("#contact", {
+             scrollTrigger: {
+                 trigger: "#academy",
+                 scrub: true,
+                 // markers:true,
+                 start: 'bottom center',
+                 end: 'bottom+=550 center'
+         
+             },
+             y: 0,
+             opacity: 100,
+             duration: 0.5
+         
+         });
+         
+         
+         
+         const showAnim = gsap.from('nav', {
+             yPercent: -205,
+         
+             paused: true,
+             duration: 0.4
+         }).progress(1);
+         
+         ScrollTrigger.create({
+             start: "top top",
+             end: 99999,
+             onUpdate: (self) => {
+                 self.direction === -1 ? showAnim.play() : showAnim.reverse()
+             }
+         });
+         
+         
+         
+         
+         gsap.utils.toArray('section').forEach((section, i) => {
+         
+         
+             if (section.getAttribute('data-header-nav') !== null) {
+         
+                 var colorClass = section.getAttribute('data-header-nav')
+         
+                 ScrollTrigger.create({
+                     trigger: section,
+                     // markers:true,
+                     start: 'top +=75',
+                     end: 'bottom ',
+                     toggleClass: {
+                         targets: 'li',
+                         className: colorClass
+                     },
+         
+                 })
+         
+             }
+         
+         });
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+      </script>
+   </body>
 </html>
