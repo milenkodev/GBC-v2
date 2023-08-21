@@ -3,7 +3,8 @@
 
 <head>
     <link rel="icon" href="src/images/fav-beard.svg">
-    <meta charset="UTF-8" name="description" content="Welcome to the Gentlemen's Barber Club based in Rotterdam, where style meets sophistication. Discover the art of grooming and experience the epitome of men's haircuts in Rotterdam. Our skilled barbers curate the finest haircuts, blending classic techniques with modern trends. Immerse yourself in a world of refined masculinity and indulge in the ultimate grooming experience. Join us at our Rotterdam barber club and redefine your style with the expert touch that discerning gentlemen deserve.">
+    <meta charset="UTF-8" name="description"
+        content="Welcome to the Gentlemen's Barber Club based in Rotterdam, where style meets sophistication. Discover the art of grooming and experience the epitome of men's haircuts in Rotterdam. Our skilled barbers curate the finest haircuts, blending classic techniques with modern trends. Immerse yourself in a world of refined masculinity and indulge in the ultimate grooming experience. Join us at our Rotterdam barber club and redefine your style with the expert touch that discerning gentlemen deserve.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css?">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +24,8 @@
         x-transition:leave-start="translate-x-0  " x-transition:leave-end="translate-x-[-500px] ">
 
         <inner-nav class=" flex justify-between  items-center sm:py-3 py-1 lg:px-12 px-4 z-50  ">
-            <a href="#hero" aria-label="Hero section"><img id="logo"  src="src/images/logo.svg" alt="Gentlemens barber club logo" loading="lazy"></a>
+            <a href="#hero" aria-label="Hero section"><img id="logo" src="src/images/logo.svg"
+                    alt="Gentlemens barber club logo" loading="lazy"></a>
             <ul class="sm:hidden md:hidden flex  md:gap-3 gap-8 w-auto">
                 <li
                     class="  duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
@@ -59,8 +61,9 @@
                 <div class="flex flex-col w-auto m-auto ">
 
                     <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500" id="top-bar"> <img
-                            loading="lazy" src="src/images/hamburger-icon/top-line.svg" alt="upper line of hamburger menu"></span>
-                    <span class="px-1 hamburger-lines duration-300" id="middle-bar" > <img loading="lazy"
+                            loading="lazy" src="src/images/hamburger-icon/top-line.svg"
+                            alt="upper line of hamburger menu"></span>
+                    <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
                             src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
                     <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
                             src="src/images/hamburger-icon/bottom-line.svg" alt="bottom line of hamburger menu"></span>
@@ -79,24 +82,22 @@
 
     </nav>
     <!-- dropdown -->
-    <div id="dropdown-menu" 
-
-    
-
+    <div id="dropdown-menu"
         class="z-[99] w-full h-[100dvh] bg-[--black-color] top-0 left-0 fixed overflow-hidden lg:hidden "
-        :class="show ? 'translate-x-0 duration-200  transition-all' : ' opacity-100 opacity-1 translate-x-[-1500px] duration-200 transition-all'" 
-        >
+        :class="show ? 'translate-x-0 duration-200  transition-all' : ' opacity-100 opacity-1 translate-x-[-1500px] duration-200 transition-all'">
 
         <nav-inner-dropdown class="flex  justify-between items-center pt-6 pb-6 px-4 ">
 
-            <a href="#hero" aria-label="Hero section" class=" transition hover:scale-110 hover:shadow-xl"><img id="logo" class="" loading="lazy"
-                    src="src/images/logo-white.svg" alt=""></a>
-            <input type="checkbox" class="hidden  " id="hamburger-dropdown" x-model="show" aria-describedby="hamburger-menu-dropdown">
-            <label for="hamburger" class=" w-12 h-12 bg-[--black-color] grid lg:hidden" id="hamburger-menu-dropdown">
+            <a href="#hero" aria-label="Hero section" class=" transition hover:scale-110 hover:shadow-xl"><img id="logo"
+                    loading="lazy" src="src/images/logo-white.svg" alt=" Gentlemens barber club logo"></a>
+            <input type="checkbox" class="hidden  " id="hamburger-dropdown" x-model="show"
+                aria-describedby="hamburger-menu-dropdown">
+            <label for="hamburger-dropdown" class=" w-12 h-12 bg-[--black-color] grid lg:hidden" id="hamburger-dropdown">
                 <div class="flex flex-col w-auto m-auto transition hover:scale-110 hover:shadow-xl ">
 
                     <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500 " id="top-bar"> <img
-                            loading="lazy" src="src/images/hamburger-icon/top-line.svg" alt="upper line of hamburger menu"></span>
+                            loading="lazy" src="src/images/hamburger-icon/top-line.svg"
+                            alt="upper line of hamburger menu"></span>
                     <span class="px-1 hamburger-lines duration-300" id="middle-bar"> <img loading="lazy"
                             src="src/images/hamburger-icon/middle-line.svg" alt="middle line of hamburger menu"></span>
                     <span class=" px-1 hamburger-lines duration-500" id="bottom-bar"> <img loading="lazy"
@@ -158,23 +159,24 @@
                     Rotterdam.</h1>
                 <a href="https://gentlemens-barberclub.salonized.com/widget_bookings/new" target="_blank"
                     class="action-btn-hero mb-16 sm:mb-3  transition hover:scale-110 hover:shadow-xl  ">Book an
-                    appointment <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
+                    appointment <img src="src/images/arrow.svg" class="btn-icon" loading="lazy"
+                        alt="Arrow pointing right"></a>
 
 
                 <review-score
                     class="sm:p-2 md:p-2 p-4 sm:mt-8 md:mt-8 bg-[#F7F7F7] flex gap-3 items-center rounded-lg shadow-sm shadow-slate-300">
                     <a href="https://www.google.com/search?q=gentlemensbarberclub&oq=gentlemensbarberclub+&aqs=chrome..69i57j69i59j69i60.5647j0j7&sourceid=chrome&ie=UTF-8#"
-                       aria-label="Google reviews" target="_blank"> <inner-wrapper-left class="flex  ">
-                            <reviewer-img class=" z-[49]"><img src="src/images/reviews/1.webp" alt="Face of a customer from Google"
-                                    loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-40 -ml-4"><img src="src/images/reviews/2.webp" alt="Face of a customer from Google"
-                                    loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-30 -ml-4"><img src="src/images/reviews/3.webp" alt="Face of a customer from Google"
-                                    loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-20 -ml-4"><img src="src/images/reviews/4.webp" alt="Face of a customer from Google"
-                                    loading="lazy"></reviewer-img>
-                            <reviewer-img class="  z-10 -ml-4"><img src="src/images/reviews/5.webp" alt="Face of a customer from Google"
-                                    loading="lazy"></reviewer-img>
+                        aria-label="Google reviews" target="_blank"> <inner-wrapper-left class="flex  ">
+                            <reviewer-img class=" z-[49]"><img src="src/images/reviews/1.webp"
+                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                            <reviewer-img class="  z-40 -ml-4"><img src="src/images/reviews/2.webp"
+                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                            <reviewer-img class="  z-30 -ml-4"><img src="src/images/reviews/3.webp"
+                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                            <reviewer-img class="  z-20 -ml-4"><img src="src/images/reviews/4.webp"
+                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
+                            <reviewer-img class="  z-10 -ml-4"><img src="src/images/reviews/5.webp"
+                                    alt="Face of a customer from Google" loading="lazy"></reviewer-img>
                         </inner-wrapper-left> </a>
 
 
@@ -196,9 +198,11 @@
                 <div class="glide  self-center ">
                     <div class="glide__track    " data-glide-el="track">
                         <ul class="glide__slides    ">
-                            <li class="glide__slide  "><img class="" src="src/images/img1.webp" alt="Haircut of a customer" loading="lazy">
+                            <li class="glide__slide  "><img class="" src="src/images/img1.webp"
+                                    alt="Haircut of a customer" loading="lazy">
                             </li>
-                            <li class="glide__slide "><img class=" " src="src/images/img2.webp" alt="Haircut of a customer" loading="lazy">
+                            <li class="glide__slide "><img class=" " src="src/images/img2.webp"
+                                    alt="Haircut of a customer" loading="lazy">
                             </li>
 
                         </ul>
@@ -210,8 +214,8 @@
 
         <arrow-down class="flex justify-center  ">
             <a href="#the-story" aria-label="Scroll down to the story">
-                <div class="bg-[#1f1f1f] grid"><img src="src/images/arrow-down.svg" alt="Arrow pointing down" loading="lazy"
-                        class=" md:p-4 sm:p-4 p-3  duration-300 w-16 animate-pulse"></div>
+                <div class="bg-[#1f1f1f] grid"><img src="src/images/arrow-down.svg" alt="Arrow pointing down"
+                        loading="lazy" class=" md:p-4 sm:p-4 p-3  duration-300 w-16 animate-pulse"></div>
             </a>
         </arrow-down>
     </hero>
@@ -244,8 +248,8 @@
             </inner-wrapper-left>
             <inner-wrapper-right class=" ">
 
-                <img src="src/images/barber-self.webp" alt="Image of the owner of the barbershop" id="about-img" loading="lazy"
-                    class=" object-cover min-h-[280px] max-h-[500px]  ">
+                <img src="src/images/barber-self.webp" alt="Image of the owner of the barbershop" id="about-img"
+                    loading="lazy" class=" object-cover min-h-[280px] max-h-[500px]  ">
             </inner-wrapper-right>
         </container>
     </section>
@@ -260,27 +264,29 @@
             <h2 class="sm:text-center md:text-center self-end  grow">Our finest <span>haircuts</span></h2>
             <a href="https://www.instagram.com/gentlemensbarber_club/" target="_blank"
                 class="transition hover:scale-110 hover:shadow-md sm:hidden md:hidden action-btn content-end  hover:shadow-slate-200 duration-300 hover:-translate-y-1">
-                <img src="src/images/instagram.svg" class="btn-icon " alt="Logo of Instagram" loading="lazy"> Check more on instagram</a>
+                <img src="src/images/instagram.svg" class="btn-icon " alt="Logo of Instagram" loading="lazy"> Check more
+                on instagram</a>
         </inner-wrapper>
         <gallery class="grid lg:grid-cols-5  md:grid-cols-3 grid-cols-2 gap-3  place-items-stretch auto-cols-max">
 
-            <img src="src/images/haircuts/1.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/2.webp"  class="object-left-top" loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/3.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/4.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/5.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/6.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/7.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/8.webp"  class="object-left-top" loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/9.webp"  loading="lazy" alt=" Haircut of a customer">
-            <img src="src/images/haircuts/10.webp"  class=" md:hidden" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/1.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/2.webp" class="object-left-top" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/3.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/4.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/5.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/6.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/7.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/8.webp" class="object-left-top" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/9.webp" loading="lazy" alt=" Haircut of a customer">
+            <img src="src/images/haircuts/10.webp" class=" md:hidden" loading="lazy" alt=" Haircut of a customer">
 
 
 
         </gallery>
         <a href="https://www.instagram.com/gentlemensbarber_club/" target="_blank"
             class="lg:hidden action-btn content-end hover:shadow-lg hover:shadow-slate-200 duration-300 hover:-translate-y-1">
-            <img src="src/images/instagram.svg" class="btn-icon " loading="lazy" alt="Logo of Instagram"> View more on instagram</a>
+            <img src="src/images/instagram.svg" class="btn-icon " loading="lazy" alt="Logo of Instagram"> View more on
+            instagram</a>
     </section>
 
 
@@ -289,8 +295,9 @@
         id="service-and-pricing">
         <inner-wrapper-right class=" sm:order-1 md:order-1 md:w-full ">
 
-            <iframe title="Gentlemen's Barber Club services and Pricing list" loading="lazy" class="min-h-[830px]" src="https://gentlemens-barberclub.salonized.com/services?layout=embed"
-                frameborder="0" allowfullscreen ></iframe>
+            <iframe title="Gentlemen's Barber Club services and Pricing list" loading="lazy" class="min-h-[830px]"
+                src="https://gentlemens-barberclub.salonized.com/services?layout=embed" frameborder="0"
+                allowfullscreen></iframe>
 
         </inner-wrapper-right>
         <inner-wrapper-left class="md:order-0 flex  w-full flex-col justify-start gap-12  ">
@@ -351,10 +358,10 @@
             </p>
 
             <inner-wrapper-2 class="flex gap-16 flex-wrap ">
-                <a href="#contact"
-                    class="action-btn self-center transition hover:scale-110 hover:shadow-md">Contact us <img
-                        src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
-                <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png" alt="Logo of Samenwerkingsorganisatie Beroepsonderwijs Bedrijfsleven">
+                <a href="#contact" class="action-btn self-center transition hover:scale-110 hover:shadow-md">Contact us
+                    <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
+                <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png"
+                    alt="Logo of Samenwerkingsorganisatie Beroepsonderwijs Bedrijfsleven">
             </inner-wrapper-2>
 
         </inner-wrapper-left>
@@ -415,19 +422,23 @@
                 </address>
                 <a href="https://goo.gl/maps/vQsitdjr4QXVJSZG8" target="_blank"
                     class="transition hover:scale-110 hover:shadow-md  action-btn-whatsapp   py-3 px-6 text-white bg-[#3663b0] flex gap-4   font-extrabold rounded-lg  ">
-                    <img loading="lazy" src="src/images/google-direction.svg" class="btn-icon" alt="Icon of Google maps">Google maps</a>
+                    <img loading="lazy" src="src/images/google-direction.svg" class="btn-icon"
+                        alt="Icon of Google maps">Google maps</a>
                 <a href="https://wa.me/+31638477744" target="_blank"
                     class="transition hover:scale-110 hover:shadow-md action-btn-whatsapp   py-3 px-6 text-white bg-[#247441] flex gap-4   font-extrabold rounded-lg  ">
-                    <img loading="lazy" src="src/images/whatsapp.svg" class="btn-icon" alt="Logo of WhatsApp"> Chat on WhatsApp</a>
+                    <img loading="lazy" src="src/images/whatsapp.svg" class="btn-icon" alt="Logo of WhatsApp"> Chat on
+                    WhatsApp</a>
 
                 <div class="flex flex-col gap-4 mt-24 sm:mt-8 md:mt-8">
                     <p>Follow our social media:</p>
                     <button-group class="flex gap-4"> <a href="https://www.instagram.com/gentlemensbarber_club/"
                             target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
-                            <img loading="lazy" src="src/images/instagram.svg" class="btn-icon" alt="Logo of Instagram"> Instagram </a>
+                            <img loading="lazy" src="src/images/instagram.svg" class="btn-icon" alt="Logo of Instagram">
+                            Instagram </a>
                         <a href="https://www.facebook.com/people/Gentlemens-Barber-Club/100064843727852/"
                             target="_blank" class="transition hover:scale-110 hover:shadow-md action-btn-contact   ">
-                            <img src="src/images/facebook.svg" loading="lazy" class="btn-icon" alt="Logo of Facebook"> Facebook
+                            <img src="src/images/facebook.svg" loading="lazy" class="btn-icon" alt="Logo of Facebook">
+                            Facebook
                         </a></button-group>
 
                 </div>
@@ -455,7 +466,7 @@
 
             const titleSelector = document.querySelector('title');
             var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-            
+
 
             if (document.visibilityState === 'visible') {
                 titleSelector.innerHTML = 'Gentlemen\’s Barber Club';

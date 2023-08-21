@@ -20,7 +20,7 @@
 
 
 
-#hamburger[type=checkbox]:checked + label{
+#hamburger[type=checkbox]:checked + label, #hamburger-dropdown[type=checkbox]:checked + label{
    #top-bar{
         transform: translateY(8px) rotate(-42deg) ;
         transform-origin: center center;
