@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="src/images/fav-beard.svg">
     <meta charset="UTF-8" name="description" content="Welcome to the Gentlemen's Barber Club based in Rotterdam, where style meets sophistication. Discover the art of grooming and experience the epitome of men's haircuts in Rotterdam. Our skilled barbers curate the finest haircuts, blending classic techniques with modern trends. Immerse yourself in a world of refined masculinity and indulge in the ultimate grooming experience. Join us at our Rotterdam barber club and redefine your style with the expert touch that discerning gentlemen deserve.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css?">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/glide.core.min.css">
-
     <title>Gentlemen's Barber Club</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -453,11 +453,19 @@
 
         function checkFocus() {
 
-            const titleSelector = document.querySelector('title')
+            const titleSelector = document.querySelector('title');
+            var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+            
+
             if (document.visibilityState === 'visible') {
-                titleSelector.innerHTML = 'Gentlemen\'s Barber Club';
+                titleSelector.innerHTML = 'Gentlemen\’s Barber Club';
+                link.href = 'src/images/fav-hat.svg';
+                document.getElementsByTagName('head')[0].appendChild(link);
+
             } else {
-                titleSelector.innerHTML = 'BOOK NOW!';
+                titleSelector.innerHTML = ' 🔙  Get Your Finest Haircut Today';
+                link.href = 'src/images/fav-beard.svg';
+                document.getElementsByTagName('head')[0].appendChild(link);
             }
         };
 
