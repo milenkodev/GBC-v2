@@ -23,7 +23,7 @@
         x-transition:leave-start="translate-x-0  " x-transition:leave-end="translate-x-[-500px] ">
 
         <inner-nav class=" flex justify-between  items-center sm:py-3 py-1 lg:px-12 px-4 z-50  ">
-            <a href="#hero" class="" aria-label="Hero section"><img id="logo"  src="src/images/logo.svg" alt="Gentlemens barber club logo" loading="lazy"></a>
+            <a href="#hero" aria-label="Hero section"><img id="logo"  src="src/images/logo.svg" alt="Gentlemens barber club logo" loading="lazy"></a>
             <ul class="sm:hidden md:hidden flex  md:gap-3 gap-8 w-auto">
                 <li
                     class="  duration-300 ease-in-out transition   hover:-translate-y-1  hover:border-b-2 hover:border-[--primary-color]  ">
@@ -89,10 +89,10 @@
 
         <nav-inner-dropdown class="flex  justify-between items-center pt-6 pb-6 px-4 ">
 
-            <a href="" class=" transition hover:scale-110 hover:shadow-xl"><img id="logo" class="" loading="lazy"
+            <a href="#hero" aria-label="Hero section" class=" transition hover:scale-110 hover:shadow-xl"><img id="logo" class="" loading="lazy"
                     src="src/images/logo-white.svg" alt=""></a>
-            <input type="checkbox" class="hidden  " id="hamburger" x-model="show" aria-describedby="hamburger-menu">
-            <label for="hamburger" class=" w-12 h-12 bg-[--black-color] grid lg:hidden" id="hamburger-menu">
+            <input type="checkbox" class="hidden  " id="hamburger" x-model="show" aria-describedby="hamburger-menu-dropdown">
+            <label for="hamburger" class=" w-12 h-12 bg-[--black-color] grid lg:hidden" id="hamburger-menu-dropdown">
                 <div class="flex flex-col w-auto m-auto transition hover:scale-110 hover:shadow-xl ">
 
                     <span class=" px-1 hamburger-lines peer-[checked]:hidden duration-500 " id="top-bar"> <img
