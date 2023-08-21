@@ -1027,6 +1027,11 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-\[100dvh\] {
+  padding-top: 100dvh;
+  padding-bottom: 100dvh;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1557,6 +1562,10 @@ h1 > span, h2 > span, h3 > span {
     padding-bottom: 0.75rem;
   }
 
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -1684,6 +1693,10 @@ h1 > span, h2 > span, h3 > span {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-center {
