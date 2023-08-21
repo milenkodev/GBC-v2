@@ -271,7 +271,7 @@
             <inner-wrapper-2 class="flex gap-16 flex-wrap ">
                <a href="#contact" class="action-btn self-center transition hover:scale-110 hover:shadow-md">Contact us
                <img src="src/images/arrow.svg" class="btn-icon" loading="lazy" alt="Arrow pointing right"></a>
-               <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png"
+               <img class="w-32 h-auto md:w-48 " src="src/images/sbb-logo.png" id="sbb"
                   alt="Logo of Samenwerkingsorganisatie Beroepsonderwijs Bedrijfsleven">
             </inner-wrapper-2>
          </inner-wrapper-left>
@@ -281,7 +281,7 @@
          </inner-wrapper-right>
          </gallery>
       </section>
-      <section class="  flex flex-col  justify-center  px-[--page-padding-x] py-24 sm:py-12 "
+      <section class="  flex flex-col  justify-center  px-[--page-padding-x] py-24 sm:py-12 translate-y-[800px]"
          id="contact">
          <h2 class="  text-center  lg:w-[32ch] self-center sm:hidden md:hidden"><span>Contact us</span> and
             get yourself a nice haircut
@@ -304,8 +304,8 @@
                <p>Sunday</p>
                <p class="justify-self-end">Closed</p>
             </inner-wrapper-left>
-            <inner-wrapper-right class=" flex flex-col gap-4  place-items-start  ">
-               <address class="not-italic flex flex-col gap-1">
+            <inner-wrapper-right class=" flex flex-col gap-4  place-items-start   ">
+               <address class="not-italic flex flex-col gap-1 mb-8 ">
                   <p class="font-bold mb-2 text-4xl">Gentlemen's Barber Club</p>
                   <p>Eckarstraat 47, 3077 XD Rotterdam <br>
                      <a href="tel: +31638477744p123">(+31)638477744</a>
@@ -452,20 +452,20 @@
          });
          
          
-        //  gsap.to("#contact", {
-        //      scrollTrigger: {
-        //          trigger: "#contact",
-        //          scrub: true,
-        //         //  markers:true,
-        //          start: 'top center',
-        //          end: 'center center'
+         gsap.to("#contact", {
+             scrollTrigger: {
+                 trigger: "#sbb",
+                 scrub: true,
+                 markers:true,
+                 start: 'top top',
+                 end: 'bottom top'
          
-        //      },
-        //      y: 0,
-        //      opacity: 100,
-        //      duration: 0.5
+             },
+             y: 0,
+             opacity: 100,
+             duration: 1.5
          
-        //  });
+         });
          
          
          
